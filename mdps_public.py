@@ -7,7 +7,7 @@ Created on Sun May  8 21:01:15 2022
 
 import pickle
 import streamlit as st
-#from streamlit_option_menu import option_menu
+from streamlit_option_menu import option_menu
 
 
 # loading the saved models
@@ -18,6 +18,13 @@ heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
 
 parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 
+# RUN WITH PATH IN LOCAL ENVIRONMENT
+
+#diabetes_model = pickle.load(open('C:/Users/User/Documents/NorthCentralUniversity/ModelDeployment/public_ml_web_app-main/diabetes_model.sav', 'rb'))
+
+#heart_disease_model = pickle.load(open('C:/Users/User/Documents/NorthCentralUniversity/ModelDeployment/public_ml_web_app-main/heart_disease_model.sav', 'rb'))
+
+#parkinsons_model = pickle.load(open('C:/Users/User/Documents/NorthCentralUniversity/ModelDeployment/public_ml_web_app-main/parkinsons_model.sav', 'rb'))
 
 
 # sidebar for navigation
@@ -247,9 +254,9 @@ if (selected == "Parkinsons Prediction"):
 
 
 
+# Run in Anaconda prompt with this part
 
-
-
+# streamlit run "C:\Users\User\Documents\NorthCentralUniversity\ModelDeployment\public_ml_web_app-main\mdps_public.py*"
 
 
 
